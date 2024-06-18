@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Research Assistant</h1>
+        <nav>
+            <ul>
+                <li><a href="#search">Search Papers</a></li>
+                <li><a href="#summary">Summarize</a></li>
+                <li><a href="#questions">Ask Questions</a></li>
+                <li><a href="#latex">Generate LaTeX</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search">
+            <h2>Search Papers</h2>
+            <input type="text" id="search-query" placeholder="Enter search term">
+            <button onclick="searchPapers()">Search</button>
+            <div id="search-results"></div>
+        </section>
+
+        <section id="summary">
+            <h2>Summarize Paper</h2>
+            <textarea id="paper-text" placeholder="Paste your paper text here"></textarea>
+            <button onclick="summarizePaper()">Summarize</button>
+            <div id="summary-result"></div>
+        </section>
+
+        <section id="questions">
+            <h2>Ask Questions</h2>
+            <textarea id="question-text" placeholder="Ask a question about the paper"></textarea>
+            <button onclick="askQuestion()">Ask</button>
+            <div id="question-result"></div>
+        </section>
+
+        <section id="latex">
+            <h2>Generate LaTeX</h2>
+            <textarea id="latex-input" placeholder="Enter text to convert to LaTeX"></textarea>
+            <button onclick="generateLatex()">Generate</button>
+            <div id="latex-output"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Research Assistant</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
